@@ -1,0 +1,23 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+
+body{
+    width: 100vw;
+}
+
+.subheading{font-size: 50px;font-weight: 700;margin: 30px 20px;}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    border: 5px solid wheat;
+    padding: 30px;margin: 0px 20px;
+}
+
+.card{
+    aspect-ratio: 16/9;flex-grow: 1;max-width: 300px;border-radius: 10px;
+    box-shadow: 0px 10px 0px #a48434;
+    padding: 30px;
+    display: flex;flex-direction: column;justify-content: space-between;
+    background-color: wheat;
+}
+.card-head{font: 600 30px roboto;}

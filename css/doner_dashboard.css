@@ -1,0 +1,94 @@
+:root{
+    --color1:white;
+    --color2:#5e5e5e;
+    --color3:#60A5FF;
+}
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header, header i{background-color: var(--color3);color: var(--color1);}
+main{
+    display: flex;
+    flex-direction: row;
+    height: 95vh;
+    position: fixed;
+    top: 10vh;
+}
+
+body main>div>div{box-shadow: 0px 10px 0px #0000004f;border-radius: 20px;}
+
+html,body{height: 100%;}
+aside{width: 15vw;background-color: var(--color2);height: 90vh;display: flex;flex-direction: column;justify-content: space-between;align-items: center;padding: 20px;}
+aside ul{display: flex;flex-direction: column;justify-content: space-between;align-items: center;height: 40vh;}
+aside button,aside a{text-decoration: none;color: black;background-color: white;margin-right: 3.0vw;padding:10px;border-radius: 20px;width: 15vw;text-align: center;border: 1px solid;box-shadow: 0px 5px 0px #0000004f;}
+
+.donation_cards{width:85vw;display: block;}
+.karma-point{width: 80vw;height: 30vh;margin: 20px;background-color: var(--color2);padding: 20px 50px;display: grid;grid-template-columns: 1fr 1fr;grid-template-rows: 1fr 1fr;color: var(--color1);}
+.karma-point>div{background-color: #ffffff5f;display: flex;align-items: center;padding: 10px;border-radius: 30px;width: 35vw;justify-content: space-evenly;}
+.donation_cards>*{margin: 20px;}
+.donation_cards> ul{list-style: none;display: flex;flex-direction: row;justify-content: space-evenly;align-items: center;}
+.donation_cards> ul> li{
+    border: 1px solid black;
+    padding: 10px;
+    width: 20vw;
+    aspect-ratio: .8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: cover;
+    transition: 0.5s ease-in-out;
+}
+.donation_cards> ul> li button{background-color: white;width: 80%;aspect-ratio: 5;border-radius: 30px;}
+.donation_cards> ul> li button a{text-decoration: none;color: #000;}
+.donation_cards> ul> li:nth-of-type(1){background-image: url(/assets/images/1.png);}
+.donation_cards> ul> li:nth-of-type(1):hover{box-shadow: 5px 10px 0px #0000004f;}
+.donation_cards> ul> li:nth-of-type(2){background-image: url(/assets/images/2.png);}
+.donation_cards> ul> li:nth-of-type(2):hover{box-shadow: 0px 10px 0px #0000004f;}
+.donation_cards> ul> li:nth-of-type(3){background-image: url(/assets/images/3.png);}
+.donation_cards> ul> li:nth-of-type(3):hover{box-shadow: -5px 10px 0px #0000004f;}
+
+
+.history{width: 85vw;padding: 1vw;display: none;}
+.history>.top{width: 100%;}
+.history>.top i{font-size: 30px;}
+.history>.chart{background-color: var(--color2);display: flex;justify-content: space-evenly;color: var(--color1);}
+.history>.chart>.bar{
+    display: flex;flex-direction: column;justify-content: space-between;align-items: center;
+    height: 250px;width: 50px;
+    padding: 20px 10px;
+}
+.history>.chart>.bar>progress{transform: rotateZ(-90deg) translateX(-70px);height: 30px;border-radius: 0px;}
+.history>.chart>.bar>progress[value]::-webkit-progress-bar{background-color: #eee;box-shadow:-5px -5px 5px rgba(0, 0, 0, 0.25) inset}
+.history>.chart>.bar>progress[value]::-webkit-progress-value {
+    background-color: var(--color3);
+    border-radius: 0px 10px 10px 0px; 
+  }
+.history>.pastngo>table{width: 100%;background-color: var(--color3);padding: 20px;border-radius: 20px;color: var(--color1);box-shadow: 0px 10px 0px #0055aF;}
+.history>.pastngo>table tr{height:4.5vh;}
+.history>.pastngo>table td:nth-of-type(2),td:nth-of-type(3){width: 20vw;height: 100%;}
+
+.recommend{display: none;padding: 1vw;width: 85vw;}
+.recommend>div{
+    background-color: var(--color2);color: var(--color1);
+    padding: 20px;margin: 40px;
+    display: flex;flex-direction: column;justify-content: space-between;
+}
+.recommend .cards{display: flex;justify-content: space-between;height: 35vh;}
+.recommend .cards>li{
+    display: flex;flex-direction: column;justify-content: space-between;
+    height: 30vh;width: 20vw;
+    border: 1px solid var(--color1);
+    flex-grow: 1;
+    margin: 10px;
+}
+.recommend .cards img{width: 200px;}
+
+a{text-decoration: none;color: #fff;}
+.logo {
+    width: 250px;
+    display: flex;align-items: center;justify-content: space-between;
+  }
+.logo img{width: 80px;}
+.logo p{color: white;font-size: larger;}

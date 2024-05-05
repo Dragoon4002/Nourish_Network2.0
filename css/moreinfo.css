@@ -1,0 +1,35 @@
+.heading{font-size: 100px;font-family: "Merienda", cursive;;font-weight: 800;}
+.subheading{font-size: 50px;font-family: "Roboto", sans-serif;font-weight: 600;}
+.normal{font-size: 30px;}
+.subtext{font-size: 15px;}
+
+body{align-items: flex-start;}
+#title{
+  margin-top: 10vh;padding: 100px;
+  height: 70vh;width: 100%;
+  display: flex;flex-direction: column;justify-content: space-evenly;text-align: left;
+  background-image: url(/assets/images/nourish_network_logo.png);background-size: cover;background-position: center center;
+}
+#title button{width: 40vw;background-color: transparent;color: white;border:2px solid white;transition: 0.5s;padding: 20px;border-radius: 20px;}
+#title button:hover{color: cyan;border-color: cyan;box-shadow: inset 0px 0px 20px cyan;}
+
+body>.subheading,body>button{margin-left: 5vh;}
+
+#our_helps{margin:50px 0px;width:100%;display: flex;justify-content: space-evenly;align-items: center;}
+#our_helps>li{
+  width: 30vw;
+  aspect-ratio: 9/16;
+  padding:25vw 10px;
+  max-height: 80vh;
+  text-align: center;
+  background-size: cover;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  background-position: center center;
+}
+#our_helps li:nth-of-type(1){background-image: url(/assets/images/4.png);}
+#our_helps li:nth-of-type(2){background-image: url(/assets/images/5.png);}
+#our_helps li:nth-of-type(3){background-image: url(/assets/images/6.png);}
+
+body>button{width: 30vw;background-color: transparent;color: black;border:2px solid black;transition: 0.5s;padding: 20px;border-radius: 20px;}

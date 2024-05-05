@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nourish Network/history</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/doner_dashboard.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img
+          class="logo"
+          src="assets/images/nourish_network_logo.png"
+          alt="logo"
+        />
+        <a href="Nourish Network.html">
+          <p>Nourish Network</p>
+        </a>
+        </div>
+        <div id="date"></div>
+        <div class="link">
+            <a href="">
+                <i class="fa-solid fa-message"></i>
+            </a>|<a href="">
+                <i class="fa-solid fa-bell"></i>
+            </a>|<a href="">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul>
+                <button onclick="change_page(1)">
+                    <li>Donate</li>
+                </button>
+                <button onclick="change_page(2)">
+                    <li>History</li>
+                </button>
+                <button onclick="change_page(3)">
+                    <li>Recommendation</li>
+                </button>
+                <button>
+                    <li>Setting</li>
+                </button>
+            </ul>
+            <a href="">Buy Us A Coffee</a>
+        </aside>
+        <div class="donation_cards">
+            <div class="karma-point">
+                <p class="subheading">Karma Points:</p><p class="normal">Each donation gives you 50 points</p>
+                    <div class="maximum-point">Highest Score: <div class="subheading">13,219.98</div></div>
+                    <div class="week-point">This Week score: <div class="subheading">965.23</div></div>
+            </div>
+            <ul class="cards">
+                <li class="card">
+                    <div class="normal">Money Donation</div>
+                    <button><a href="ngo donate.html">Donation</a></button>
+                </li>
+                <li class="card">
+                    <div class="normal">Food Donation</div>
+                    <button>Donation</button>
+                </li>
+                <li class="card">
+                    <div class="normal">Other Donation</div>
+                    <button>Donation</button>
+                </li>
+            </ul>
+        </div>
+        <div class="history">
+            <table class="top">
+                <tr>
+                    <td>
+                        <div class="normal">History</div>
+                    </td>
+                    <td rowspan="2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="subheading">Past 12 Months</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="chart">
+                <div class="bar">
+                    <progress value="250" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+                <div class="bar">
+                    <progress value="50" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+                <div class="bar">
+                    <progress value="10" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+                <div class="bar">
+                    <progress value="320" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+                <div class="bar">
+                    <progress value="200" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+                <div class="bar">
+                    <progress value="120" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+                <div class="bar">
+                    <progress value="100" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+                <div class="bar">
+                    <progress value="200" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+                <div class="bar">
+                    <progress value="50" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+                <div class="bar">
+                    <progress value="170" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+                <div class="bar">
+                    <progress value="0" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+                <div class="bar">
+                    <progress value="10" max="320"></progress>
+                    <div class="value">150</div>
+                </div>
+            </div>
+            <p class="subheading">Past Donated NGOs</p>
+            <div class="pastngo">
+                <table>
+                    <tr>
+                        <td>Name of the NGOs</td>
+                        <td>Total Amount Donated</td>
+                        <td>Points Received</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ Helping Organizers</td>
+                        <td>$480</td>
+                        <td>48</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ Helping Organizers</td>
+                        <td>$340</td>
+                        <td>34</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ Helping Organizers</td>
+                        <td>$250</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ Helping Organizers</td>
+                        <td>$300</td>
+                        <td>30</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="recommend">
+            <div class="popular">
+                <div class="normal">Here are some of the Popularly dinated NGOs</div>
+                <ul class="cards">
+                    <li>
+                        <img src="/assets/images/event1.jpg" alt="NGO1">
+                        <div class="text">
+                            <div>Ananya Seva Sangathan</div>
+                            <p>operating near west bengal</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/assets/images/event2.jpg" alt="">
+                        <div class="text">
+                            <div>Shakti Samarthan Sabha</div>
+                            <p>operating near uttarpradesh</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/assets/images/event3.jpg" alt="">
+                        <div class="text">
+                            <div>HopeBridge Alliance</div>
+                            <p>operating near maharastra</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="recent">
+                <div class="subheading"></div>
+                <ul class="cards">
+                    <li>
+                        <img src="/assets/images/event4.jpg" alt="">
+                        <div class="text">
+                            <div>Prerna Jan Kalyan Samiti</div>
+                            <p></p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/assets/images/event5.jpg" alt="">
+                        <div class="text">
+                            <div>Kiran Kshamata Sangh</div>
+                            <p>operating near west bengal</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="/assets/images/event6.jpg" alt="">
+                        <div class="text">
+                            <div>Compassion Catalyst Coalition</div>
+                            <p>operating near new york city</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- <footer>
+        <div>
+            <div class="normal">Contact</div>
+            <span>123-456-7890</span>
+            <p>nourishnetwork@gmail.com</p>
+            <span>500 Terry Francine St</span>
+            <span>San Francisco, CA 94158</span>
+        </div>
+        <div>
+            <span>Solution</span>
+            <span>Vision</span>
+            <span>Programs</span>
+            <span>Blogs</span>
+            <a href="#" class="getstarted">
+            <span>Get Started</span>
+            </a>
+        </div>
+        <div>
+            <span>Subscribe to Our Newsletter</span>
+            <span>Email*</span>
+            <input type="email" name="email" id="email" />
+            <button class="submit">Submit</button>
+        </div>
+        <div>
+            <div class="followus">
+            <span>Follow Us On:</span>
+            <span id="icon">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            </span>
+            <div class="subtext">
+                © 2024 by Nourish Network Powered and secured by HackWave Nexus
+            </div>
+        </div>
+    </footer> -->
+    <script>
+        var time = new Date();
+        const days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+        var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+        day=days[time.getDay()];
+        dated=time.getDate();
+        month=months[time.getMonth()];
+        year=time.getFullYear();
+
+        var date = document.getElementById("date");
+        date.innerHTML=`${day}, ${month} ${dated}, ${year}`;
+    </script>
+    <script>
+        const donate=document.getElementsByClassName("donation_cards")[0];
+        const history=document.getElementsByClassName("history")[0];
+        const recommend=document.getElementsByClassName("recommend")[0];
+        pages=[donate,history,recommend];
+        function change_page(n){
+            for(i=0;i<3;i++){
+                console.log(pages[i].classList)
+                if(i==n-1){
+                    pages[i].style.display="block";
+                }
+                else{
+                    pages[i].style.display="none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

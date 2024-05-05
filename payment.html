@@ -1,0 +1,10 @@
+<div id="container"></div>
+<script async   src="https://pay.google.com/gp/p/js/pay.js"   onload="onGooglePayLoaded()"></script>
+
+<script async src="https://pay.google.com/gp/p/js/pay.js" onload="onGooglePayLoaded()">
+    function onGooglePayLoaded() {
+        window.googlePayClient = new google.payments.api.PaymentsClient({
+            environment: "TEST"
+        });
+    }
+</script>

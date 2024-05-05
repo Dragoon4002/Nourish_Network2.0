@@ -1,0 +1,75 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+body{
+    background-image: url(/assets/videos/Ending\ poverty\ and\ hunger\ [j7KKZ6v5o34].gif);
+    backdrop-filter: brightness(0.5);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Inter", cursive;
+    color: white;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 23vw;
+    height: 60vh;
+    background-color: #ffffff5f;
+    box-shadow: 0px 0px 15px black;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+    row-gap: 10px;
+}
+.login>button{
+    text-align: center;
+    aspect-ratio: 6;
+    height: 5vh;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.1vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.number_input{
+    display: block;
+    padding-left: 1vw;
+    aspect-ratio: 7;
+    height: 5vh;
+    border-radius: 5px;
+    border: 3px #ffffff solid;
+    outline: none;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    transition: background 0.2s, border-color 0.2s;
+}
+.number_input:focus{
+    border-color: #b5f6ff;
+    background-color: #fff;
+}
+.password_input{
+    aspect-ratio: 7;
+    padding-left: 1vw;
+    height: 4.6vh;
+    border-radius: 5px;
+    border: none;
+    border: 3px #ffffff solid;
+}
+.login>button:nth-of-type(2){
+    aspect-ratio: 3;
+    height: 5vh;
+    border-radius: 20px;
+    border: none;
+    background-color: #FD7583;
+    font-size: 1.15vw;
+    color: #fff;
+}
